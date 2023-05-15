@@ -1,0 +1,388 @@
+/*Define custom font face*/@font-face {
+    font-family: DMSans;
+    src: url(DM_Sans/DMSans-Regular.ttf);
+}
+/*Appy the following properties to all elements*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: DMSans;
+
+}
+/*Header styles*/
+.head{
+    z-index: 1; /*Set the stacking order of the element*/
+    text-transform: uppercase;/*Convert text to uppercase*/
+    height: 100px;
+    width: 100%;
+    padding: 18px 30px;
+    background: #f2ebe9;
+    position: fixed;/*Position the element relative to the viewport*/
+    border-bottom: 1px solid #264143;
+}
+/*Main container styles*/
+.container {
+    width: 100%;
+    margin: auto;
+    position: relative;/*Position the element relative to its normal position*/
+    overflow-x: hidden;
+}
+/*Body styles*/
+body{
+    background:  #eddcd9;
+    font-size: 20px;
+}
+/*Header title styles*/
+.header{
+    display: inline-flex;
+    font-weight: bold;
+    color: #264143;
+    line-height: 30px;
+}
+/*Header part of logo styles*/
+#tresna{
+    padding: 5px;
+    padding-top: 15px;
+    font-size: 100%;
+}
+/* */
+/*card container for login card */
+#card {
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+/* styling the card row*/
+#card2 {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 455px;
+    margin: 6rem auto 8.1rem auto;
+    width: 385px;
+}
+/* styling the card padding*/
+#card-content {
+    padding: 10px 20px;
+}
+/* styling tthe title of login page*/
+#card-title {
+    color: #264143;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+    box-sizing: border-box;
+    border: 1px solid #555;
+    font-size: 15px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* styling the coloum username*/
+#username {
+    border: 2px solid #555;
+    font-size: 15px;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-size: 30px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+/*styling button css for fun display*/
+.btn2 {
+    background-color: #264143;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 18px 19px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;/* oppacity the button*/
+}
+
+.btn2:hover {
+    opacity: 1;
+}
+
+#register {
+    font-size: 16px;
+    color: blue;
+    text-decoration: underline;
+}
+/* the responsive css for this page*/
+@media screen and (max-width: 900px) {
+
+    #card {
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    #card2 {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 70%;
+        margin: 6rem auto 8.1rem auto;
+        width: 70%;
+    }
+    
+
+    
+
+
+} 
+
+
+/*  */
+/*header image styles*/
+.header img{
+    width: 70px;
+    padding-top: 1px;
+}
+/*Navigation menu styles*/
+.Menu{
+    display: inline;
+    float: right;
+    line-height: 40px;
+    padding-top:  8px;
+}
+/*Navigation link styles*/
+.Menu a{
+    padding: 5px 5px;
+    color: #264143;
+    transition: all .5s !important;/*Add transition effect*/
+    font-size: 80%;
+    font-weight: bold;
+}
+/*Hover and active navigation link styles*/
+.Menu a:hover, .Menu a.active{
+    color: #f2ebe9;
+    background-color: #264143;
+}
+/*Dropdown menu styles*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+/*Dropdown menu content styles*/
+.content{
+    display: none;/*Hide the element*/
+    position: absolute;
+    background: #f2ebe9;
+    min-width: 150px;
+    font-size: 16px;
+    top: 34px;
+    z-index: 1;
+    border-top: 1px solid #f2ebe9;
+    border: 3px solid #264143;
+}
+/*Show dropdown menu content on hover*/
+.dropdown:hover .content{
+    display: block;/*Show the element*/
+}
+/*Dropdown menu link styles*/
+.content a{
+    padding: 12px 10px;
+    border-bottom: 1px solid #264143;
+    display: block;
+    transition: all .5s !important;
+    text-align: center;
+
+}
+/*Hide checkbox and button elements*/
+#check, .btn{
+    display: none;
+}
+.content a:hover{
+    color: blue;
+    background-color: #eddcd9;
+}
+
+#check, .btn{
+    display: none;
+}
+/*Media query for screen sizes up to 900 pixels wide*/
+@media (max-width: 900px){
+    /*Style for button element*/
+    .btn{
+        display: inline-block;/*Make the button display inline with other elements*/
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+        /*CSS for the label element within the button*/
+    .btn label{
+        display: inline-block;
+        width: 80px;
+        height: 70px;
+        padding: 25px;
+    }
+        /*CSS for the span element within the label*/
+    .btn label span{
+        display: block;
+        height: 10px;
+        width: 20px;
+        border-top: 3px solid black;
+    }
+        /*CSS for the button label on hover or when the checkbox is checked*/
+    .btn label:hover, #check:checked ~ .btn label{
+        background-color: #f2ebe9;
+        transition: all .5s ease/*Add a transition effect when changing the background color*/
+    }
+        /*CSS for a menu element*/
+    .Menu{
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #f2ebe9;
+        top: 70px;
+        right: 0;
+        padding-top: 5px;
+        overflow-y: hidden;
+        transition: all .5s ease-in;
+    }
+        /*Sets the display of the anchor elements inside the menu to be a block element, 
+    and add padding at the buttom*/
+    .Menu a{
+        display: block;
+        padding-bottom: 20px;
+
+    }
+        /*When checkbox with the ID "check" is not checked,
+     sets the height of the menu to 0 pixels, effectively hiding it*/
+    #check:not(:checked) ~ .Menu{
+        height: 0px;
+    }
+        /*When the checkbox with ID "check" is checked,
+    sets the height of the menu to be 100% of the viewport height, 
+    and allows vertical scrolling for the overflow content*/
+    #check:checked ~ .Menu{
+        height: 100vh;
+        overflow-y: auto;
+    }
+        /*Sets the float property of the elements with class"dropdown"
+    inside the menu to none, and makes their width 100% of their parent container*/
+    .Menu .dropdown{
+        float: none;
+        width: 100%;
+    }
+    /*CSS for class "content" inside the menu*/
+    .Menu .content{
+        position: relative;
+        background-color: #f2ebe9;
+        top:0;
+        left: 0;
+    }
+    .header img{
+        position: relative;
+        width: 50px;
+    }
+    #tresna{
+        position: relative;
+        font-size: 90%;
+        padding-top: 5px;
+    }
+
+}
+/*Applies the following styles when the maximum height of the viewport is
+800 pixels*/
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    background-color: #264143;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;/*Distribute items evenly*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*CSS for footer sections*/
+.footer-left,
+.footer-center,
+.footer-right {
+  flex-basis: 30%;/*Set basis for flexbox*/
+  text-align: center;
+}
+/*CSS for footer heading 2*/
+footer h2 {
+    color:#f2ebe9;
+    font: normal 30px ;
+    text-align: center;
+}
+/*CSS for footer left section paragraph*/
+.footer-left p{
+    color: #f2ebe9;/*Set the text color to off-white*/
+    text-align: center;
+    font-size: 16px;
+    padding-top: 32px;
+}
+
+/*Style for paragraph in the footer center*/
+.footer-center p{
+    color: #f2ebe9;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 25px;
+}
+/*Styles for paragraph and links in the footer right*/
+.footer-right p,a{
+    color: #f2ebe9;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+/*Style for the links within the icon class*/
+.icon a{
+
+    padding-top: 5px;
+}
+/*Styles for images in the footer center*/
+.footer-center img {
+    height: 15%;
+    width: 15%;
+    align-items: center;
+}
+/*CSS for image within the icon class*/
+.icon img{
+    width: 10%;
+    height: 10%; 
+    align-items: center;
+}
+/*Applies the following styles when the minimum width of the viewport is
+900 pixels*/
+@media screen and (max-width: 900px) {
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex-basis: 100%;}
+  }  

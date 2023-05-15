@@ -1,0 +1,531 @@
+/*Define the font-face and the font family name*/
+@font-face {
+    font-family: DMSans;
+    src: url(DM_Sans/DMSans-Regular.ttf);
+}
+/*Set default styles for all elements*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: DMSans;
+
+}
+/*Style the header element*/
+.head{
+    z-index: 1;/*Set the stacking order for the element*/
+    text-transform: uppercase;
+    height: 100px;
+    width: 100%;
+    padding: 18px 30px;
+    background: #f2ebe9;
+    position: fixed;
+    border-bottom: 1px solid #264143;
+}
+
+/*CSS for the container element*/
+.container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+/*Style for the body element*/
+body{
+    background:  #eddcd9;
+    font-size: 20px;
+
+}
+
+/*Css for header element*/
+.header{
+    display: inline-flex;/*Displays the element as an inline-flex container*/
+    font-weight: bold;
+    color: #264143;
+    line-height: 30px;
+}
+
+/*CSS for the element with ID 'tresna'*/
+#tresna{
+    padding: 5px;
+    padding-top: 15px;
+    font-size: 100%;
+}
+
+/*CSS for the image element inside the header*/
+.header img{
+    width: 70px;
+    padding-top: 1px;
+}
+.Menu{
+    display: inline;
+    float: right;
+    line-height: 40px;
+    padding-top:  8px;
+}
+/*Styles for the links inside the menu*/
+.Menu a{
+    padding: 5px 5px;
+    color: #264143;
+    transition: all .5s !important;/*Sets transition effect for the links*/
+    font-size: 80%;
+    font-weight: bold;
+}
+/*Styles for the links inside the menu when hovered or active*/
+.Menu a:hover, .Menu a.active{
+    color: #f2ebe9;
+    background-color: #264143;
+}
+.dropdown{
+    position: relative;/*Sets the positioning context of the dropdown button*/
+    display: inline-block;
+}
+/*Css for the content element*/
+.content{
+    display: none;
+    position: absolute;
+    background: #f2ebe9;
+    min-width: 150px;
+    font-size: 16px;
+    top: 34px;/*Positions the element at the top,34 pixels away from the top edge of the parent element*/
+    z-index: 1; /*Sets the stacking order*/
+    border-top: 1px solid #f2ebe9;
+    border: 3px solid #264143;
+}
+.dropdown:hover .content{
+    display: block;/*Show element on hover*/
+}
+.content a{
+    padding: 12px 10px;
+    border-bottom: 1px solid #264143;
+    display: block;
+    transition: all .5s !important;
+    text-align: center;
+
+}
+.content a:hover{
+    color: blue;
+    background-color: #eddcd9;
+}
+
+#check, .btn{
+    display: none;
+}
+
+/* The content is fixed in the page */
+.page{
+    padding-top: 7%;
+}
+.container-list{
+    margin: 60px;
+}
+.about-border{
+    
+    padding-top: 200px;
+    border: 4px solid #264143;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    position: relative;
+    
+}
+.background-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*Sets the gradation of the image*/
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+}
+
+.mision-border{
+    
+    margin-top: 25px;
+    width: 450px;
+    height: 60px;
+    align-content: center;
+    background-color: #264143;
+    border: 1px solid #264143;
+    padding: 10px;
+}
+
+.about-border h1{
+    opacity: 0.8; /*Set the opacity of the border*/
+    position: relative;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+
+}
+
+/*Paragraph styling for blackbox section*/
+.black-box p{
+   
+    text-align: center;
+    color: white;
+}
+
+/*Heading styling for h3 elements*/
+h3{
+    text-align: center;
+    color: white;
+}
+
+
+/*Unordered list styling*/
+ul{
+    list-style-image: url(pngwing.com.png);/*Checklist image*/
+    width: 2px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 450px;
+    
+}
+
+/*Styling for the space class that manage the space between the list of the strength*/
+.space{
+    display: flex;
+    text-align: center;
+
+}
+
+/*CSS that styling the checklist image space*/
+.space img{
+   
+    max-width: 20px;
+    max-height: 20px;  
+    margin-bottom: 10px;
+
+}
+
+/*Sets the space caption between the list*/
+.space-capt{
+    
+    font-size: 20px;
+}
+
+/*styling the border for the list strength content*/
+.list-border{
+    
+    display: flex;
+    width: 100%;
+    height: 60px;
+    text-align: center;  
+    padding-left: 30%;
+    padding-right: 10%;  
+    padding-top: 25px;
+    }
+
+
+/*Styling for the image id*/
+#img{
+    padding-left: 10px;
+    max-width: 30px;
+    max-height: 20px;  
+    margin-bottom: 10px;
+
+}
+
+/*styling for the space-ima classes, this class for the first right list*/
+.space-img{
+
+    padding-left: 30px;
+}
+/*Styling second right list*/
+.space-img-one{
+
+    padding-left: 21px;
+
+}
+/*Styling third right list*/
+.space-img-two{
+
+    padding-left: 5px;
+}
+
+
+/*Sets the font size of the list of strength*/
+.capt{
+font-size: 20px;
+
+}
+
+/*Container with flexible layout and centered content*/
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+/*Black border for the mision and vision with white text and bordered radius*/
+.black-box{
+    width: 50%;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+/*Sets the heading 3 of the text inside the black-box*/
+.black-box h3{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/*Sets the paragraph of the vision and mision inside the border*/
+.black-box p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    background-color: #264143;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Left, center, and right sections of footer CSS*/
+.footer-left,
+.footer-center,
+.footer-right {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+/*Sets the heading 2 of the text inside the footer*/
+footer h2 {
+    color:#f2ebe9;
+    font: normal 30px ;
+    text-align: center;
+}
+/*Sets the paragraph of footer left*/
+.footer-left p{
+    color: #f2ebe9;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 32px;
+}
+
+/*Sets the paragraph of footer center*/
+.footer-center p{
+    color: #f2ebe9;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 25px;
+}
+
+/*Sets the paragraph, and link of footer right*/
+.footer-right p,a{
+    color: #f2ebe9;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+/*Sets icon section with social media link*/
+.icon a{
+
+    padding-top: 5px;
+}
+.footer-center img {
+    height: 15%;
+    width: 15%;
+    align-items: center;
+}
+
+.icon img{
+    width: 10%;
+    height: 10%; 
+    align-items: center;
+}
+
+/*Styling for horizontal rule element*/
+hr{
+    border: 2px solid #264143;
+}
+
+
+/*Media query for screens with a maximum width of 900px*/
+@media screen and  (max-width: 900px){
+    /*Styles for a button that appears on small screens*/
+    .btn{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    /*Styles for the label of the button*/
+    .btn label{
+        display: inline-block;
+        width: 80px;
+        height: 70px;
+        padding: 25px;
+    }
+
+    /*Styles for a span element inside the label*/
+    .btn label span{
+        display: block;
+        height: 10px;
+        width: 20px;
+        border-top: 3px solid black;
+    }
+    /*Styles for the button label when hovered or checked*/
+    .btn label:hover, #check:checked ~ .btn label{
+        background-color: #f2ebe9;
+        transition: all .5s ease
+    }
+
+    /*Styles for a menu that appears on small screens*/
+    .Menu{
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #f2ebe9;
+        top: 70px;
+        right: 0;
+        padding-top: 5px;
+        overflow-y: hidden;
+        transition: all .5s ease-in;
+    }
+
+    /*Styles for the links inside the menu*/
+    .Menu a{
+        display: block;
+        padding-bottom: 20px;
+
+    }
+
+    /*Sets the menu when the button is unchecked*/
+    #check:not(:checked) ~ .Menu{
+        height: 0px;
+    }
+
+    /*Sets the menu when the button is checked*/
+    #check:checked ~ .Menu{
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    /*Sets the content inside the menu*/
+    .Menu .dropdown{
+        float: none;
+        width: 100%;
+    }
+    .Menu .content{
+        position: relative;
+        background-color: #f2ebe9;
+        top:0;
+        left: 0;
+    }
+    .header img{
+        position: relative;
+        width: 50px;
+    }
+
+    /*Sets the text element with id "tresna" on small screens*/
+    #tresna{
+        position: relative;
+        font-size: 90%;
+        padding-top: 5px;
+    }
+
+}
+
+
+/*Media query for screen with a maximum width of 900 pixels*/
+@media screen and (max-width: 900px){
+
+    /*Styles for a page on small screens*/
+    .page{
+        padding-top: 20%;
+    }
+
+    /*Sets the border section with a class of mision-border on small screen*/
+    .mision-border{
+        width: 80%;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .about-border h1{
+        display: inline;
+        font-weight: 900;
+        text-align: center;
+        font-size: 20px;
+    }
+    .container-list{
+        display: contents;
+    }
+    .list-border{
+        height: 50%; 
+        padding-top: 25px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+    }
+    .space{
+        display: flex;
+    }
+
+    .container1{
+        display: block;
+        justify-content: center;
+    }
+    .black-box{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 300px;
+        border: 2px solid white;
+        background-color: black;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+    .black-box:first-child{
+        margin-right: 0px;
+    }
+    .black-box:last-child{
+        margin-left: 0px;
+    }
+    .container1{
+        display: contents;
+    }
+
+
+}
+
+/*Apply CSS styles when the height of the screen is 800 pixels or less*/
+@media (max-height:800px) {
+    /*Sets the footer position static*/
+    footer {
+        position: static;
+    }
+    /*Add top padding to the header*/
+    header {
+        padding-top: 40px;
+    }
+}
+
+/*Apply CSS styles when the screen width is 900 pixels or less*/
+@media screen and (max-width: 900px) {
+    /*Set the flex-basis property to 100% for footer elements*/
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex-basis: 100%;}
+  }  

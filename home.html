@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--This is head section of the html document,
+    includes the type declaration, metadata tags, viewport, title of the page and link to the external stylesheet-->
+<head>
+
+    <!--Meta tags to specify the document character set, the viewport, 
+        and compatinility with IE-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title of the page-->
+    <title>Home</title>
+
+    <!--Link to external home css file-->
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!--Header section, which includes a navigation menu-->
+    <div class="container">
+        <header class="head"> 
+            <!--Navigation menu with logo and links to other pages-->
+            <nav class="nav">
+                <!--Header containing logo and website name-->
+                <div class="header">
+                    <label><img src="Desain_tanpa_judul-removebg-preview.png" alt=""></label>
+                    <label id="tresna">TRESNA FOUNDATION</label>
+                </div>
+
+                <!--Menu icon for mobile devices-->
+                <input type="checkbox" id="check">
+                <div class="btn">
+                    <label for="check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <!--Navigation menu links-->
+                <div class="Menu">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="program2.html">Program</a>
+                    <a href="contact.html">Contact</a>
+                    <!--Dropdown menu for "Our Team"-->
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Our Team
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <!--Content of the dropdown menu-->
+                        <div class="content">
+                            <a href="#faq">FAQ</a>
+                            <a href="#members">Members</a>
+                        </div>
+                    </div>
+                    <a href="log.html">Get Involved</a>
+                </div>
+            </nav>   
+        </header>
+    </div>    
+    <!--Main content section-->
+    <div class="container">
+        <div class="page">
+            <!--Welcoming section on the home page-->
+            <div class="about">
+                <div class="about-border">
+                    <div class="background-img"></div>
+                    <h1>WELCOME TO OUR FUNDRAISING WEBSITE!</h1>
+                </div>            
+            </div>
+            <!--Home content section about the problem of food waste-->
+            <div class="home">
+                <h2>tresna foundation</h2><br>
+                <p> 
+
+                    The problem of hunger and malnutrition is a problem faced by many countries around the world. On the other hand, many items 
+                    are wasted and not utilized every day, including in Bali. So far, food waste or food waste, especially in Bali, has occurred because many restaurants, hotels and supermarkets produce large amounts of food waste every day.
+                    In addition, many tourists who come to Bali also leave behind unfinished food, which is a significant source of food waste on the island.
+                </p>
+                <br>
+                <!--Button to learn more about the foundation's program-->
+                <button type="button" onclick="location.href = 'program2.html';">Learn More</button>
+
+            </div><br><br>
+
+            
+            <!--Horizontal rule-->
+            <hr><br>
+
+            <div id="faq" class="faq-page">
+                <h2>FAQ</h2><br>
+                <p>Questions that may be asked.</p>
+
+                <div class="row-faq">
+                    <div class="faq">
+                    <div class="question">
+                        <details>
+                        <summary>How do we donate?</summary>
+                        <br>
+                        <div>
+                            After you log in to the account you created on this website, you can click the "Donate Now" button to take you to the donation Google Form.
+                            <br><br>If you still don't understand or have something to ask further, you can contact the 
+                            <a id="link" href="contact.html">contact</a> listed on this website.
+                            <br><br>
+                        </div>
+                        </details>
+                    </div>
+                    </div>
+                
+                    <div class="faq">
+                    <div class="question">
+                        <details>
+                        <summary>What can be donated?</summary>
+                        <br>
+                        <div>
+                            You can donate food that is still suitable for consumption.
+                            <br><br>
+                        </div>
+                        </details>
+                    </div>
+                    </div>
+                    <!--This is FAQ section with a question and answer-->
+                    <div class="faq">
+                    <div class="question">
+                        <details>
+                        <summary>How can I become a volunteer?</summary>
+                        <br>
+                        <div>
+                            After you have successfully log in to the account you have created on this web, you can click the "Be Volunteer" 
+                            button to take you to the Google Form that must be filled in.
+                            <br><br>
+                        </div>
+                        </details>
+                    </div>
+                    </div>
+                </div>
+
+            <!--Add multiple line breaks for spacing-->
+            <br><br><br><br><br><br><br>
+
+            <hr><br>
+            <!--This section list the member of the Tresna Foundation team-->
+            <h1 id="members">OUR TEAMS</h1><br><br>
+            <div class="members-page">
+                <div class="row-members">
+                    <div class="members">
+                        <img src="ratih.png" alt="Ratih"> <!--Include the image of each team-->
+                        <div class="members-desc">
+                            <h4>Ratih Suarningsih</h4><br>
+                            <p>DEVELOPER</p>
+                            <p>Food waste is food that is wasted or not fit to eat. Shopping more than you need is one of the causes of food waste.</p>
+                        </div>
+
+                    </div>
+                    <div class="members">
+                        <img src="risma.png" alt="Risma"> 
+                        <div class="members-desc">
+                            <h4>Risma Hanansia</h4><br> <!--Include the name of the team member-->
+                            <P>DEVELOPER</P>
+                            <p>Food waste that is not handled properly will cause air, water, soil pollution and make the surrounding environment smell bad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-members">
+                    <div class="members">
+                        <img src="pradnya.png" alt="Pradnya">
+                        <div class="members-desc">
+                            <h4>Pradnya Dewi</h4><br>
+                            <P>DEVELOPER</P> <!--Include the position of each member-->
+                            <p>Buying food in moderation, paying attention to expiry dates, and composting can help to reduce food waste.</p>
+                        </div>
+                    </div>
+                    <div class="members">
+                        <img src="Tia.png" alt="Tia">
+                        <div class="members-desc">
+                            <h4>Tia Oktaviani</h4><br>
+                            <P>DEVELOPER</P>
+                            <p>There is nothing wrong with sharing food that is still suitable for consumption to reduce food waste.</p><br>
+                        </div>
+                    </div>
+                    <div class="members">
+                        <img src="Febri.png" alt="Febri">
+                        <div class="members-desc">
+                            <h4>Febrilia Eka</h4><br>
+                            <P>DEVELOPER</P>
+                            <p>By donating food that is still suitable for consumption, we can help others who still need food and help protect our environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+</div>
+
+<br><br><br><br><br><br> <!--Breakdown code to make space-->
+    <!--Footer section of the page-->
+    <footer>
+
+        <div class="footer-left">
+            <h2>Tresna Foundation</h2> <!--Footer left section that include the name of the foundation, and
+            the address-->
+            <p>Kampus Renon:
+                Jl. Raya Puputan No. 86 Renon – Denpasar</p>
+
+        </div>
+
+        <div class="footer-center"> <!--Footer center section, include icon of the foundation-->
+
+            <img src="de.png" alt=""> <!--The image of the foundation-->
+
+            <div class="copyRight"><!--include the copyright also-->
+                <p>Copyright ©2023<strong>TresnaFoundation</strong> All rights reserved</p>
+            </div>
+        </div>
+        <div class="footer-right"> <!--Footer right section include all of the foundation social media-->
+            <!--At this momment we not yet provide our social media, so we use "#" to help the links -->
+            <h2>Find US: </h2>
+            <div class="icon"> 
+                <a href="#"><img src="ig2.png" alt="instagram" ></a>
+                <a href="#"><img src="twitter2.png" alt="twitter" id="twitter"></a> 
+                <a href="#"><img src="fb3.png" alt="facebook" id="fb"></a> 
+            </div>
+            <p><a href="mailto:tresnafoundation@gmail.com">Email : tresnafoundation@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
